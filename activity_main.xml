@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/noir"
+    android:orientation="vertical"
+    tools:context=".controller.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="40dp"
+        android:text="SpotifHeart"
+        android:textColor="@color/blanc"
+        android:textSize="50dp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/logoSpotify"
+        android:layout_width="342dp"
+        android:layout_height="217dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/ImageSpotify"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:paddingTop="190dp"
+        android:src="@drawable/boutonspotify"
+        android:background="@color/noir"/>
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:background="@color/noir"
+    android:orientation="vertical"
+    tools:context=".controller.WaitingScreen">
+
+    <TextView
+        android:id="@+id/affichageQueue"
+        android:layout_width="414dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="SpotifHeart"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_background"
+        android:textStyle="italic"
+        android:textSize="60dp"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <TextView
+        android:id="@+id/affichageNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:text="Recherche parmi les 0 titres"
+        android:textColor="@color/blanc"
+        android:textSize="23dp"
+        android:textStyle="bold"></TextView>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifChargement"
+        android:layout_width="match_parent"
+        android:layout_height="284dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="start"
+        android:src="@drawable/loading" />
+
+    <ProgressBar
+        android:id="@+id/my_progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="264dp"
+        android:layout_height="27dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/texteWaiting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:text="0/10 chansons trouvées"
+        android:textColor="@color/blanc"
+        android:textSize="23dp"
+        android:textStyle="bold"></TextView>
+
+
+</LinearLayout>
+
